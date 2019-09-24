@@ -1,0 +1,11 @@
+@mixin image-bg {
+	background-color: theme-color("light");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position:center center;
+	background-size: cover;
+}
+@mixin title-case {
+	color: #fff;
+	font-size: 65px;
+}
