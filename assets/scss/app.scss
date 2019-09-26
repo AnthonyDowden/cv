@@ -1,9 +1,11 @@
 @import "variables";
 @import "mixin";
 @import '../../node_modules/bootstrap/scss/bootstrap';
+@import "typography";
 
 html, body {
 	height: 100vh;
+	font-size: 100%;
 }
 
 .container-small {
@@ -11,10 +13,67 @@ html, body {
 	margin: auto;
 }
 
+.container-medium {
+	width: 750px;
+	margin: auto;
+}
+
 .section-1 {
 	@include image-bg;
 	background-image: url("../images/section-1.jpg");
+
+	.nav-wrapper {
+		height: 50px;
+
+		.nav-link {
+			color: #fff;
+		}
+	}
+
 	h1 {
 		@include title-case;
+
+		span {
+			color: theme-color("accent");
+		}
 	}
+
+	h2 {
+		padding-top: 25px;
+		padding-bottom: 5px;
+		color: #fff;
+	}
+}
+
+.section-2 {
+	@include image-bg;
+
+	.skill-title {
+		width: 100px;
+		color: #ffffff;
+	}
+
+	.skill-progress {
+		width: calc(100% - 150px);
+
+	}
+
+	.skill-percentage {
+		width: 50px;
+		text-align: right;
+		color: #ffffff;
+	}
+
+	.progress {
+		background: theme-color("primary");
+	}
+	.progress-bar {
+		background: theme-color("accent");
+	}
+
+}
+
+.section-3 {
+	@include image-bg;
+	background-image: url("../images/section-2.jpg");
 }

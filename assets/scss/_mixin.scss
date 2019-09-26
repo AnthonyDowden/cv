@@ -1,5 +1,5 @@
 @mixin image-bg {
-	background-color: theme-color("light");
+	background-color: theme-color("dark");
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position:center center;
@@ -7,5 +7,5 @@
 }
 @mixin title-case {
 	color: #fff;
-	font-size: 65px;
+	font-size: 5rem;
 }
