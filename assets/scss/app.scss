@@ -84,5 +84,18 @@ html, body {
 	.contact-icon {
 		font-size: 50px;
 		color: theme-color("accent");
+		padding: 25px;
+	}
+	.contact-links {
+		align-content: center;
+		text-align: center;
 	}
 }
+
+.footer {
+	 left: 0;
+	 bottom: 0;
+	 background-color: theme-color("dark");
+	 color: theme-color("accent");
+	 text-align: center;
+ }
