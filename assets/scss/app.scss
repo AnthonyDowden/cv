@@ -75,5 +75,14 @@ html, body {
 
 .section-3 {
 	@include image-bg;
-	background-image: url("../images/section-2.jpg");
+	background-image: url("../images/section-3.jpg");
+}
+
+.section-4 {
+	@include image-bg;
+	background-image: url("../images/section-4.jpg");
+	.contact-icon {
+		font-size: 50px;
+		color: theme-color("accent");
+	}
 }
