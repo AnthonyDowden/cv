@@ -3,9 +3,13 @@
 @import '../../node_modules/bootstrap/scss/bootstrap';
 @import "typography";
 
+
+
 html, body {
 	height: 100vh;
 	font-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container-small {
@@ -23,17 +27,23 @@ html, body {
 	color: theme-color("accent");
 	padding: 25px;
 }
-
+.dropdown {
+	display:none;
+}
 .section-1 {
 	@include image-bg;
 	background-image: url("../images/section-1.jpg");
 
 	.nav-wrapper {
 		height: 50px;
-
 		.nav-link {
 			color: #fff;
+
 		}
+		.nav-link:hover {
+			color: theme-color("accent");
+		}
+
 	}
 
 	h1 {
@@ -48,6 +58,11 @@ html, body {
 		padding-top: 25px;
 		padding-bottom: 5px;
 		color: #fff;
+	}
+	.play-btn {
+		color: theme-color("accent");
+		font-size: 50px;
+		padding: 25px;
 	}
 }
 
@@ -82,20 +97,28 @@ html, body {
 .section-3 {
 	@include image-bg;
 	background-image: url("../images/section-3.jpg");
+	.website-image {
+		object-fit: contain;
+	}
 }
 
 .section-4 {
-	@include image-bg;
+	background-color: theme-color("dark");
+	background-repeat: no-repeat;
+	background-position:center center;
+	background-size: cover;
 	background-image: url("../images/section-4.jpg");
 	.contact-icon {
 		font-size: 50px;
-		color: theme-color("accent");
 		padding: 25px;
 	}
 	.contact-links {
 		align-content: center;
 		text-align: center;
 		margin: 20px;
+		a {
+			color: theme-color("accent");
+		}
 	}
 	h1 {
 		margin: 8px;
@@ -112,3 +135,27 @@ html, body {
 	 color: theme-color("accent");
 	 text-align: center;
  }
+
+
+
+@media only screen and (max-width : 400px) {
+	body, html {
+		font-size: 75%;
+		.container-small {
+			width: auto;
+		}
+		.container-medium {
+			width: auto;
+		}
+		.fa-home {
+			display:none;
+		}
+		.nav-link {
+			display: none;
+		}
+		.dropdown {
+			display: contents;
+			margin: 10px;
+		}
+	}
+}

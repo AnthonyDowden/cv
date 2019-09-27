@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<script src="https://kit.fontawesome.com/4466fa649b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/app.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
 	<title>Hello, world!</title>
 </head>
 
@@ -15,12 +16,22 @@
 	<a name="home"></a>
 	<section class="row h-100 section-1">
 		<div class="container-fluid bg-dark nav-wrapper shadow">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fas fa-align-justify"></i>
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="#skills">SKILLS</a>
+					<a class="dropdown-item" href="#portfolio">PORTFOLIO</a>
+					<a class="dropdown-item" href="#contact">CONTACT</a>
+				</div>
+			</div>
 			<div class="container h-100">
 				<nav class="row justify-content-between h-100">
 					<div class="container-small">
 						<div class="row justify-content-between align-items-center">
 							<div class="col">
-								<a class="nav-link text-accent">HOME</a>
+								<a class="nav-link"><span class="text-accent">HOME</span></a>
 							</div>
 							<div class="col">
 								<a class="nav-link" href="#skills">SKILLS</a>
@@ -44,20 +55,24 @@
 						<h1 class="">ANTHONY DOWDEN<span class="">.</span></h1>
 						<h2>WEB DEVELOPER</h2>
 					</div>
+					<div class="col-sm-6 align-self-end">
+						<span class="play-btn"><i class="fab fa-youtube"></i></span>
+					</div>
 				</div>
 			</div>
 		</div>
 	</section>
 	
 	<section class="row h-100 section-2">
+		<div class="home-link">
+			<span class="home-icon"><a href="#home"><i class="fas fa-home"></i></a></span>
+		</div>
 		<a name="skills"></a>
 		<div class="container h-100">
 			<div class="container-medium h-100">
 				<div class="row align-items-center h-100">
 					<div class="col-12">
-						<div class="home-link">
-							<span class="home-icon"><a href="#home"><i class="fas fa-home"></i></a></span>
-						</div>
+						
 						<h1>01 SKILLS</h1>
 						<h3 class="text-light">MY KNOWLEDGE LEVEL IN PROGRAMMING</h3>
 						<div class="row align-items-center pl-3 pt-3">
@@ -120,6 +135,9 @@
 	</section>
 	
 	<section class="row h-100 section-4">
+		<div class="home-link">
+			<span class="home-icon"><a href="#home"><i class="fas fa-home"></i></a></span>
+		</div>
 		<a name="contact"></a>
 		<div class="container h-100">
 			<div class="container-medium h-100">
@@ -127,18 +145,16 @@
 					<div class="container-small bg-dark w-100 h-50 align-items-center">
 						<div class="row align-items-start">
 							<div class="col">
-								<div class="home-link">
-								<span class="home-icon"><a href="#home"><i class="fas fa-home"></i></a></span>
-								</div>
+								
 								<h1>03 CONTACT</h1>
 								<h3 class="text-light">HERE ARE SOME CONTACT METHODS</h3>
 							</div>
 						</div>
 						<div class="col contact-links">
-							<span class="contact-icon"><i class="fas fa-envelope-square"></i></span>
-							<span class="contact-icon"><i class="fab fa-twitter-square"></i></span>
-							<span class="contact-icon"><i class="fab fa-facebook-square"></i></span>
-							<span class="contact-icon"><i class="fab fa-linkedin"></i></span>
+							<span class="contact-icon"><a href="mailto: a.dowden@outlook.com" target="_blank"><i class="fas fa-envelope-square"></i></a></span>
+							<span class="contact-icon"><a href="https://twitter.com/anthony_dowden" target="_blank"><i class="fab fa-twitter-square"></i></a></span>
+							<span class="contact-icon"><a href="https://www.facebook.com/anthony.dowden.758" target="_blank"><i class="fab fa-facebook-square"></i></a></span>
+							<span class="contact-icon"><a href="https://www.linkedin.com/in/anthony-dowden-25264816a/" target="_blank"><i class="fab fa-linkedin"></i></a></span>
 						</div>
 					</div>
 				</div>
