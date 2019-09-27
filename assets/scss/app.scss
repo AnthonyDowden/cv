@@ -157,5 +157,25 @@ html, body {
 			display: contents;
 			margin: 10px;
 		}
+
+
+	}
+	.section-1 {
+		.main-title {
+			text-align: center;
+		}
+	}
+	.section-2 {
+		text-align: center;
+	}
+	.section-3 {
+		text-align: center;
+	}
+	.section-4 {
+		text-align: center;
+		.contact-links {
+			margin: 0;
+
+		}
 	}
 }

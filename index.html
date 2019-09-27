@@ -4,6 +4,7 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<script src="assets/js/app.js"></script>
 	<script src="https://kit.fontawesome.com/4466fa649b.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
@@ -47,7 +48,16 @@
 				</nav>
 			</div>
 		</div>
-		<div class="container">
+		<div class="container" style="display: none" id="video">
+			<div class="container-medium">
+				<div class="row align-items-center">
+					<div class="embed-responsive embed-responsive-16by9">
+						<video id="myvideo" class="embed-responsive-item" src="assets/videos/introduction_video.mp4" controls onended="finished()"></video>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container main-title" id="maintitle">
 			<div class="container-small">
 				<div class="row align-items-center">
 					<div class="col-sm-6">
@@ -56,13 +66,13 @@
 						<h2>WEB DEVELOPER</h2>
 					</div>
 					<div class="col-sm-6 align-self-end">
-						<span class="play-btn"><i class="fab fa-youtube"></i></span>
+						<a href="#" onclick="playvideo()"><span class="play-btn"><i class="fab fa-youtube"></i></span></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	
+<!--	SKILLS SECTION-->
 	<section class="row h-100 section-2">
 		<div class="home-link">
 			<span class="home-icon"><a href="#home"><i class="fas fa-home"></i></a></span>
@@ -72,7 +82,6 @@
 			<div class="container-medium h-100">
 				<div class="row align-items-center h-100">
 					<div class="col-12">
-						
 						<h1>01 SKILLS</h1>
 						<h3 class="text-light">MY KNOWLEDGE LEVEL IN PROGRAMMING</h3>
 						<div class="row align-items-center pl-3 pt-3">
@@ -145,7 +154,6 @@
 					<div class="container-small bg-dark w-100 h-50 align-items-center">
 						<div class="row align-items-start">
 							<div class="col">
-								
 								<h1>03 CONTACT</h1>
 								<h3 class="text-light">HERE ARE SOME CONTACT METHODS</h3>
 							</div>
