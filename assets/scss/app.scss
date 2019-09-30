@@ -7,6 +7,7 @@
 
 html, body {
 	height: 100vh;
+	overflow: auto;
 	font-size: 100%;
 	font-family: 'Open Sans', sans-serif;
 	font-family: 'Roboto', sans-serif;
@@ -136,9 +137,33 @@ html, body {
 	 text-align: center;
  }
 
+@media only screen and (max-width: 800px) {
+	body, html {
+		font-size: 75%;
+		.section-1 {
+			.main-title {
+				text-align: center;
+			}
+		}
+		.section-2 {
+			text-align: center;
+		}
+		.section-3 {
+			text-align: center;
+		}
+		.section-4 {
+			text-align: center;
+			.contact-links {
+				margin: 0;
+
+			}
+		}
+	}
+}
 
 
-@media only screen and (max-width : 400px) {
+
+@media only screen and (max-width : 800px) {
 	body, html {
 		font-size: 75%;
 		.container-small {
